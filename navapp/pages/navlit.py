@@ -27,7 +27,7 @@ def show_navlit():
             placeholder="Type keyword to search...",
             label_visibility="collapsed"
         )
-        all_websites = Website.find_all_websites(search)
+        all_websites = Website.find_all_websites(search, actived=True)
         all_categories = list(set(map(lambda x: x.category, all_websites)))
     with submit_col:
         submit = st.button("Submit Website", use_container_width=True)
@@ -41,7 +41,7 @@ def show_navlit():
     else:
         logger.info(f"user_email missing")
 
-    print(f"all_favorites: {all_favorites}")
+    logger.info(f"navlit found actived websites count: {len(all_favorites)}")
     all_favorite_website_ids: set[int] = set(map(lambda x: x.website_id, all_favorites))
     exists_favorite = len(all_favorite_website_ids) > 0
 
