@@ -1,0 +1,11 @@
+version: "3"
+services:
+  api:
+    build: .
+    image: navlit
+#    command: python3 -m http.server 8080
+    volumes:
+      - ~/Infilos/docker_volumes/navlit/config:/navlit/config
+      - ~/Infilos/docker_volumes/navlit/logs:/navlit/logs
+    ports:
+      - "8080:8080"

@@ -1,0 +1,15 @@
+[server]
+port = 8080
+maxUploadSize = 5
+enableStaticServing = false
+
+[client]
+toolbarMode="minimal"
+
+[theme]
+base="light"
+primaryColor="#0e6e6d"
+textColor="#0e6e6d"
+
+[browser]
+gatherUsageStats = false

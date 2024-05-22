@@ -1,0 +1,1 @@
+streamlit run --server.address 0.0.0.0 --server.port 8080 navapp/main.py -- --env dev
