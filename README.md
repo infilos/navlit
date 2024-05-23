@@ -103,3 +103,16 @@ docker run -p 8080:8080 navlit
 docker-compose up -d
 docker-compose down
 ```
+
+### Acknowledgement
+
+- streamlit
+- streamlit-extras
+- streamlit-navigation-bar
+- loguru
+- pillow
+- peewee
+
+### License
+
+MIT
