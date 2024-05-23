@@ -41,6 +41,19 @@ Simple, lightweight, and easy-to-use navigation service.
 ![Register](screenshots/5-register.jpeg)
 ![Manage](screenshots/6-manage.jpeg)
 
+### To be improved
+
+- card style improve
+- icon: nav bar icon, button icon, card icon, favourite icon
+  - currently, nav bar component only support emoji
+  - and icon resource will be load for each component instance, cost too much time
+- manage table, and button, actived state switch
+- common website icon choose support
+- custom theme support
+- i18n support
+- performance, rerun
+- deploy on streamlit cloud
+
 ### Develop
 
 #### Dependencies Manage
